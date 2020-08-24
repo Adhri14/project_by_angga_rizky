@@ -1,0 +1,144 @@
+* {
+  margin: 0 ;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  margin: 100px auto;
+}
+
+.banner {
+  width: 530px;
+  height: 290px;
+  top: 40px;
+  left: 270px;
+  background-image: url(bg.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(112, 112, 112, .5);
+  border-radius: 6px;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  width: 530px;
+  height: 290px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(94, 1, 182, .5);
+  border-radius: 6px;
+}
+
+.banner h2 {
+  position: absolute;
+  z-index: 4;
+  color: white;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.banner ul {
+  position: absolute;
+  z-index: 4;
+  bottom: 30px;
+  left: 30px;
+  display: inline-block;
+}
+
+.banner ul li a {
+  color: white;
+  font-weight: 500;
+  margin-right: 40px;
+}
+
+.form-control {
+  position: absolute;
+  top: 70px;
+  right: 290px;
+}
+
+.card {
+  width: 280px;
+  height: 390px;
+  background-color: #fff;
+  padding: 20px 30px;
+  box-shadow: 0 0 10px rgba(112, 112, 112, .5);
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+.card h2 {
+  margin: 50px 0;
+  font-size: 2em;
+  color: rgba(94, 1, 182);
+  text-shadow: 0 0 3px rgba(255, 255, 255, .8);
+}
+
+.txtb {
+  margin-bottom: 50px;
+  position: relative;
+  border-bottom: 2px solid #a7a7a7;
+}
+
+.txtb input {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  font-size: 14px;
+  position: relative;
+  transition: .5s;
+}
+
+.txtb label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: .9em;
+  color: #008ddf;
+  transition: .5s;
+}
+
+
+.txtb input:focus ~ label,
+.txtb input:valid ~ label {
+  display: block;
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+  color: #00abb1;
+  font-style: italic;
+}
+
+button {
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+  padding: 13px 60px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(94, 1, 182);
+  transition: .3s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #fff;
+  background-color: rgb(77, 1, 148);
+}
+
+@media (max-width: 768px) {
+  .btn button {
+    margin: 15px 0 0;
+    width: 100%;
+  }
+}
